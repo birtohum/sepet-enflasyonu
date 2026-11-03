@@ -1,0 +1,134 @@
+:root {
+  color-scheme: light;
+  --zemin: #f6f5f1;
+  --yuzey: #fcfcfb;
+  --cizgi: #e3e1da;
+  --izgara: #ecebe6;
+  --metin: #0b0b0b;
+  --metin-2: #52514e;
+  --metin-3: #7a7974;
+  --seri-1: #2a78d6;   /* sepet / hal */
+  --seri-2: #eb6834;   /* TÜFE */
+  --artis: #b8322f;
+  --dusus: #1f7a3a;
+  --uyari-zemin: #fff6e0;
+  --uyari-cizgi: #e9c46a;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --zemin: #121211;
+    --yuzey: #1a1a19;
+    --cizgi: #34332f;
+    --izgara: #2a2a27;
+    --metin: #f0efec;
+    --metin-2: #c3c2b7;
+    --metin-3: #95948c;
+    --seri-1: #3987e5;
+    --seri-2: #d95926;
+    --artis: #ef7d7a;
+    --dusus: #6fcf8a;
+    --uyari-zemin: #2d2514;
+    --uyari-cizgi: #8a6d1f;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --zemin: #121211; --yuzey: #1a1a19; --cizgi: #34332f; --izgara: #2a2a27;
+  --metin: #f0efec; --metin-2: #c3c2b7; --metin-3: #95948c;
+  --seri-1: #3987e5; --seri-2: #d95926; --artis: #ef7d7a; --dusus: #6fcf8a;
+  --uyari-zemin: #2d2514; --uyari-cizgi: #8a6d1f;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--zemin);
+  color: var(--metin);
+  font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+a { color: var(--seri-1); }
+.kap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+.gizli { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+.ust { padding: 40px 0 8px; }
+.ust-etiket { margin: 0; color: var(--metin-3); font-size: 13px; letter-spacing: .06em; text-transform: uppercase; }
+h1 { margin: 4px 0 8px; font-size: clamp(30px, 6vw, 44px); line-height: 1.1; letter-spacing: -.02em; }
+.giris { margin: 0 0 16px; max-width: 640px; color: var(--metin-2); font-size: 17px; }
+.durum {
+  border: 1px solid var(--uyari-cizgi); background: var(--uyari-zemin);
+  border-radius: 10px; padding: 12px 14px; font-size: 15px; max-width: 720px;
+}
+.durum:empty { display: none; }
+.durum strong { display: block; margin-bottom: 2px; }
+
+.kartlar { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 24px 0 8px; }
+.kart { background: var(--yuzey); border: 1px solid var(--cizgi); border-radius: 12px; padding: 14px 16px; }
+.kart .etiket { color: var(--metin-2); font-size: 13px; }
+.kart .deger { font-size: 28px; font-weight: 650; letter-spacing: -.01em; font-variant-numeric: tabular-nums; }
+.kart .not { color: var(--metin-3); font-size: 12.5px; }
+
+.bolum { background: var(--yuzey); border: 1px solid var(--cizgi); border-radius: 14px; padding: 18px 18px 20px; margin: 16px 0; }
+.bolum h2 { margin: 0 0 4px; font-size: 20px; letter-spacing: -.01em; }
+.bolum h3 { margin: 18px 0 4px; font-size: 16px; }
+.aciklama { margin: 0 0 12px; color: var(--metin-2); font-size: 14.5px; }
+.bos { color: var(--metin-2); font-size: 15px; padding: 18px; border: 1px dashed var(--cizgi); border-radius: 10px; text-align: center; }
+
+.grafik { position: relative; width: 100%; }
+.grafik svg { display: block; width: 100%; height: auto; overflow: visible; }
+.grafik .eksen text { fill: var(--metin-3); font-size: 11px; }
+.grafik .izgara line { stroke: var(--izgara); }
+.grafik .taban { stroke: var(--cizgi); }
+.lejant { display: flex; flex-wrap: wrap; gap: 14px; margin: 0 0 8px; font-size: 13px; color: var(--metin-2); }
+.lejant span::before { content: ""; display: inline-block; width: 14px; height: 3px; border-radius: 2px; margin-right: 6px; vertical-align: middle; background: var(--r); }
+
+.ipucu {
+  position: fixed; z-index: 10; pointer-events: none;
+  background: var(--yuzey); color: var(--metin); border: 1px solid var(--cizgi);
+  border-radius: 8px; padding: 8px 10px; font-size: 13px; box-shadow: 0 4px 14px rgba(0,0,0,.12);
+  font-variant-numeric: tabular-nums; max-width: 260px;
+}
+.ipucu .t { color: var(--metin-2); margin-bottom: 2px; }
+.ipucu i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; background: var(--r); }
+
+table { width: 100%; border-collapse: collapse; font-size: 14px; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--izgara); }
+th { color: var(--metin-2); font-weight: 600; font-size: 13px; }
+td.s, th.s { text-align: right; }
+.tablo-kap { overflow-x: auto; }
+.tablo-ac { margin-top: 10px; font-size: 14px; }
+.tablo-ac summary { cursor: pointer; color: var(--metin-2); }
+
+.cubuklar { display: grid; gap: 6px; }
+.cubuk { display: grid; grid-template-columns: minmax(120px, 190px) 1fr 64px; align-items: center; gap: 10px; font-size: 14px; }
+.cubuk .yol { position: relative; height: 14px; }
+.cubuk .yol .orta { position: absolute; left: 50%; top: -3px; bottom: -3px; border-left: 1px solid var(--cizgi); }
+.cubuk .dolgu { position: absolute; top: 0; height: 14px; border-radius: 4px; }
+.cubuk .dolgu.arti { background: var(--artis); }
+.cubuk .dolgu.eksi { background: var(--dusus); }
+.cubuk .yuzde { text-align: right; font-variant-numeric: tabular-nums; }
+.arti-m { color: var(--artis); }
+.eksi-m { color: var(--dusus); }
+
+.arac { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 12px; }
+.arac input, .arac select {
+  font: inherit; font-size: 15px; padding: 8px 10px; border-radius: 8px;
+  border: 1px solid var(--cizgi); background: var(--zemin); color: var(--metin);
+}
+.arac input { flex: 1 1 220px; }
+.urun-satir { cursor: pointer; }
+.urun-satir:hover td { background: var(--zemin); }
+.urun-satir:focus-visible { outline: 2px solid var(--seri-1); outline-offset: -2px; }
+.urun-detay td { background: var(--zemin); padding: 10px 12px 14px; }
+.rozet { display: inline-block; font-size: 11.5px; padding: 1px 6px; border-radius: 6px; border: 1px solid var(--cizgi); color: var(--metin-2); margin-left: 6px; }
+
+.yontem p, .yontem li { color: var(--metin-2); font-size: 15px; }
+.yontem ul { padding-left: 20px; margin: 6px 0; }
+.alt { color: var(--metin-3); font-size: 13px; padding-bottom: 40px; }
+
+@media (max-width: 560px) {
+  .bolum { padding: 14px 12px 16px; }
+  .cubuk { grid-template-columns: 110px 1fr 56px; font-size: 13px; }
+  .gizle-dar { display: none; }
+}

@@ -1,0 +1,84 @@
+kod;kategori;ad;miktar;birim;eslesme;url;ikame_url
+ek01;ekmek_tahil;Piyale un 5 kg;5;kg;piyale un 5 kg;https://www.sokmarket.com.tr/piyale-un-5-kg-p-8539;
+ek02;ekmek_tahil;Anadolu Mutfağı osmancık pirinç 1 kg;1;kg;anadolu mutfagi osmancik pirinc 1 kg;https://www.sokmarket.com.tr/anadolu-mutfagi-osmancik-pirinc-1-kg-p-8374;
+ek03;ekmek_tahil;Anadolu Mutfağı baldo pirinç 1 kg;1;kg;anadolu mutfagi baldo pirinc 1 kg;https://www.sokmarket.com.tr/anadolu-mutfagi-baldo-pirinc-1-kg-p-8088;https://www.sokmarket.com.tr/tat-gonen-baldo-pirinc-1-kg-p-50293
+ek04;ekmek_tahil;Anadolu Mutfağı pilavlık bulgur 1 kg;1;kg;anadolu mutfagi pilavlik bulgur 1 kg;https://www.sokmarket.com.tr/anadolu-mutfagi-pilavlik-bulgur-1-kg-p-5325;
+ek05;ekmek_tahil;Anadolu Mutfağı köftelik bulgur 1 kg;1;kg;anadolu mutfagi koftelik bulgur 1 kg;https://www.sokmarket.com.tr/anadolu-mutfagi-koftelik-bulgur-1-kg-p-7644;
+ek06;ekmek_tahil;Filiz fiyonk makarna 500 g;0.5;kg;filiz fiyonk 500;https://www.sokmarket.com.tr/filiz-makarna-fiyonk-500-g-p-4719;
+ek07;ekmek_tahil;Piyale kelebek makarna 500 g;0.5;kg;piyale kelebek 500;https://www.sokmarket.com.tr/piyale-kelebek-makarna-500-g-p-5915;
+ek08;ekmek_tahil;Eti Lifalif yulaf ezmesi 950 g;0.95;kg;eti lifalif yulaf 950;https://www.sokmarket.com.tr/eti-lifalif-yulaf-ezmesi-avantaj-paketi-950-g-p-3574;
+ek09;ekmek_tahil;Ülker Pötibör bisküvi 450 g (kakaolu);0.45;kg;ulker kakaolu potibor 450;https://www.sokmarket.com.tr/ulker-kakaolu-potibor-biskuvi-450-g-p-5014;
+ek10;ekmek_tahil;Eyvallah yufka 500 g;0.5;kg;eyvallah yufka 500;https://www.sokmarket.com.tr/eyvallah-yufka-ekmek-500-g-p-6453;
+et01;et;Lezzetlim dana kıyma 400 g;0.4;kg;lezzetlim dana kiyma 400;https://www.sokmarket.com.tr/lezzetlim-dana-kiyma-400-g-p-5443;
+et02;et;Lezzetlim dana kuşbaşı 400 g;0.4;kg;lezzetlim dana kusbasi 400;https://www.sokmarket.com.tr/lezzetlim-dana-kusbasi-400-g-p-5400;
+et03;et;Şenpiliç kanat (kg);1;kg;senpilic kanat;https://www.sokmarket.com.tr/senpilic-kanat-kg-p-5455;
+et04;et;Gedik piliç baton sucuk 450 g;0.45;kg;gedik pilic baton sucuk 450;https://www.sokmarket.com.tr/gedik-pilic-baton-sucuk-450-g-p-7675;
+et05;et;Aytaç dana kasap sucuk 400 g;0.4;kg;aytac dana kasap sucuk 400;https://www.sokmarket.com.tr/aytac-dana-kasap-sucuk-400-g-p-34674;
+su01;sut;Sütaş yarım yağlı süt 4x1 L;4;L;sutas yarim yagli sut 4;https://www.sokmarket.com.tr/sutas-yarim-yagli-sut-4-1-lt-p-32260;https://www.sokmarket.com.tr/pinar-1-yagli-sut-4-1-l-p-3672
+su02;sut;Pınar %1 yağlı süt 1 L;1;L;pinar sut 1 l;https://www.sokmarket.com.tr/pinar-sut-1-yagli-1-l-p-3670;
+su03;sut;Sütaş kaymaksız yoğurt 1 kg;1;kg;sutas kaymaksiz yogurt 1 kg;https://www.sokmarket.com.tr/sutas-kaymaksiz-yogurt-1-kg-p-7490;https://www.sokmarket.com.tr/icim-tam-yagli-kaymaksiz-yogurt-1-kg-p-4624
+su04;sut;Mis tam yağlı yoğurt 3 kg;3;kg;mis yogurt tam yagli 3000;https://www.sokmarket.com.tr/mis-yogurt-tam-yagli-homojenize-3000-g-p-8765;
+su05;sut;Mis tam yağlı beyaz peynir 1 kg;1;kg;mis tam yagli beyaz peynir 1000;https://www.sokmarket.com.tr/mis-tam-yagli-beyaz-peynir-1000-g-p-8122;
+su06;sut;Sütaş tam yağlı beyaz peynir 500 g;0.5;kg;sutas tam yagli beyaz peynir 500;https://www.sokmarket.com.tr/sutas-tam-yagli-beyaz-peynir-500-g-p-8473;
+su07;sut;Mis tam yağlı kaşar 500 g;0.5;kg;mis tam yagli kasar 500;https://www.sokmarket.com.tr/mis-tam-yagli-kasar-peyniri-500-g-p-8768;
+su08;sut;İçim kaşar peyniri 700 g;0.7;kg;icim kasar 700;https://www.sokmarket.com.tr/icim-kasar-peyniri-700-g-p-5463;
+su09;sut;Anadolu Çiftliği M yumurta 30'lu;30;adet;anadolu ciftligi yumurta 30;https://www.sokmarket.com.tr/anadolu-ciftligi-m-yumurta-30-lu-53-63-g-p-4948;
+su10;sut;Anadolu Çiftliği L yumurta 15'li;15;adet;anadolu ciftligi yumurta 15;https://www.sokmarket.com.tr/anadolu-ciftligi-l-yumurta-15-li-63-72-g-p-4821;
+su11;sut;Mis tereyağı 500 g;0.5;kg;mis tereyag 500;https://www.sokmarket.com.tr/mis-tereyagi-500-g-p-7204;
+su12;sut;Sütaş ayran 1 L;1;L;sutas ayran 1 l;https://www.sokmarket.com.tr/sutas-pratik-sise-ayran-1-lt-p-8005;
+ya01;yag;Evin ayçiçek yağı 5 L;5;L;evin aycicek 5 l;https://www.sokmarket.com.tr/evin-aycicek-yagi-pet-5-l-p-6486;https://www.sokmarket.com.tr/yudum-aycicek-yagi-teneke-5-lt-p-3594
+ya02;yag;Evin ayçiçek yağı 2 L;2;L;evin aycicek 2 l;https://www.sokmarket.com.tr/evin-aycicek-yagi-2-l-p-7411;
+ya03;yag;Lio sızma zeytinyağı 1 L;1;L;lio sizma zeytinyag 1 l;https://www.sokmarket.com.tr/lio-sizma-zeytinyagi-1-l-p-5180;
+ya04;yag;Lio sızma zeytinyağı 2 L;2;L;lio sizma zeytinyag 2 l;https://www.sokmarket.com.tr/lio-sizma-zeytinyagi-2-l-p-8749;
+ya05;yag;Sana paket margarin 4x250 g;1;kg;sana margarin 4;https://www.sokmarket.com.tr/sana-paket-margarin-4-250-g-p-32293;
+ya06;yag;Bizim paket margarin 250 g;0.25;kg;bizim paket margarin 250;https://www.sokmarket.com.tr/bizim-paket-margarin-250-g-p-4867;
+me01;meyve;Yerli muz (kg);1;kg;muz;https://www.sokmarket.com.tr/yerli-muz-kg-p-33027;
+me02;meyve;Elma Starking (kg);1;kg;elma starking;https://www.sokmarket.com.tr/elma-starking-kg-p-37013;https://www.sokmarket.com.tr/elma-gala-kg-p-36640
+me03;meyve;Limon (kg);1;kg;limon;https://www.sokmarket.com.tr/limon-kg-p-32770;
+se01;sebze;Domates (kg);1;kg;domates;https://www.sokmarket.com.tr/domates-kg-p-32886;https://www.sokmarket.com.tr/salkim-domates-kg-p-32771
+se02;sebze;Patates (kg);1;kg;patates;https://www.sokmarket.com.tr/patates-kg-p-35919;
+se03;sebze;Kuru soğan (kg);1;kg;sogan;https://www.sokmarket.com.tr/kuru-sogan-kg-p-32883;
+se04;sebze;Salatalık (kg);1;kg;salatalik;https://www.sokmarket.com.tr/salatalik-kg-p-34550;
+se05;sebze;Mantar 300 g paket;0.3;kg;mantar 300;https://www.sokmarket.com.tr/mantar-300-g-paket-p-37256;
+se06;sebze;Anadolu Mutfağı kırmızı mercimek 1 kg;1;kg;anadolu mutfagi kirmizi mercimek 1;https://www.sokmarket.com.tr/anadolu-mutfagi-kirmizi-mercimek-1000-g-p-9055;
+se07;sebze;Anadolu Mutfağı nohut 1 kg;1;kg;anadolu mutfagi nohut 1 kg;https://www.sokmarket.com.tr/anadolu-mutfagi-nohut-1-kg-p-9054;
+se08;sebze;Anadolu Mutfağı kuru fasulye 1 kg;1;kg;anadolu mutfagi kuru fasulye 1 kg;https://www.sokmarket.com.tr/anadolu-mutfagi-kuru-fasulye-1-kg-p-6035;
+se09;sebze;Bizim Vatan domates salçası 830 g;0.83;kg;domates salcasi bizim vatan 830;https://www.sokmarket.com.tr/domates-salcasi-bizim-vatan-830-g-p-6049;
+se10;sebze;Bizim Vatan salatalık turşusu 670 g;0.67;kg;salatalik tursusu bizim vatan 670;https://www.sokmarket.com.tr/salatalik-tursusu-bizim-vatan-670-g-p-8391;
+sk01;seker;Türk Şeker toz şeker 5 kg;5;kg;turk seker toz seker 5 kg;https://www.sokmarket.com.tr/turk-seker-kristal-toz-seker-5-kg-p-2716;https://www.sokmarket.com.tr/altinkup-toz-seker-5-kg-p-7179
+sk02;seker;Altınküp küp şeker 1 kg;1;kg;altinkup kup seker 1000;https://www.sokmarket.com.tr/altinkup-kup-seker-1000-g-p-5794;
+sk03;seker;Tamek vişne reçeli 380 g;0.38;kg;tamek visne receli 380;https://www.sokmarket.com.tr/tamek-visne-receli-380-g-p-9073;
+sk04;seker;Nutella 400 g;0.4;kg;nutella 400;https://www.sokmarket.com.tr/nutella-400-g-p-4790;
+sk05;seker;Milka sütlü çikolata 80 g;0.08;kg;milka sutlu cikolata 80;https://www.sokmarket.com.tr/milka-sutlu-cikolata-80-g-p-4652;
+sk06;seker;Ülker çikolatalı gofret 4'lü 144 g;0.144;kg;ulker cikolatali gofret 144;https://www.sokmarket.com.tr/ulker-cikolatali-gofret-4-lu-144-g-p-2359;
+sk07;seker;Eti Burçak sütlü çikolatalı 114 g;0.114;kg;eti burcak 114;https://www.sokmarket.com.tr/eti-burcak-biskuvi-sutlu-cikolali-114-g-p-6090;
+dg01;diger_gida;Tat ketçap 390 g;0.39;kg;tat ketcap 390;https://www.sokmarket.com.tr/tat-ketcap-390-g-p-4960;
+dg02;diger_gida;Mayi iyotlu sofra tuzu 600 g;0.6;kg;tuz 600;https://www.sokmarket.com.tr/mayi-tuz-iyotlu-ince-sofra-tuzu-600-gr-p-45224;
+dg03;diger_gida;Lio salamura siyah zeytin 400 g;0.4;kg;lio siyah zeytin 400;https://www.sokmarket.com.tr/lio-salamura-siyah-zeytin-351-410-400-g-p-1755;
+dg04;diger_gida;Lio çizik yeşil zeytin 400 g;0.4;kg;lio cizik yesil zeytin 400;https://www.sokmarket.com.tr/lio-cizik-yesil-zeytin-291-320-400-g-p-5882;
+dg05;diger_gida;Bizim Vatan elma sirkesi 750 ml;0.75;L;elma sirkesi bizim vatan 750;https://www.sokmarket.com.tr/elma-sirkesi-bizim-vatan-750-ml-p-6038;
+dg06;diger_gida;Knorr şehriyeli tavuk çorbası 51 g;0.051;kg;knorr sehriyeli tavuk corbasi 51;https://www.sokmarket.com.tr/knorr-sehriyeli-tavuk-corbasi-51-g-p-4970;
+ic01;icecek;Çaykur Rize Turist çay 1000 g;1;kg;caykur rize turist 1000;https://www.sokmarket.com.tr/caykur-rize-turist-cay-1000-g-p-7545;
+ic02;icecek;Çaykur Tiryaki çay 500 g;0.5;kg;caykur tiryaki 500;https://www.sokmarket.com.tr/caykur-tiryaki-cay-500-g-p-8191;
+ic03;icecek;Lipton Yellow Label çay 500 g;0.5;kg;lipton yellow label 500;https://www.sokmarket.com.tr/lipton-yellow-label-cay-500-g-p-48654;
+ic04;icecek;Kurukahveci Mehmet Efendi Türk kahvesi 100 g;0.1;kg;mehmet efendi turk kahvesi 100;https://www.sokmarket.com.tr/kurukahveci-mehmet-efendi-turk-kahvesi-100-g-p-4743;
+ic05;icecek;Nescafe Gold 100 g;0.1;kg;nescafe gold 100;https://www.sokmarket.com.tr/nescafe-gold-100-g-p-100686;
+ic06;icecek;Coca-Cola 2,5 L;2.5;L;coca cola 2 5 l;https://www.sokmarket.com.tr/coca-cola-2-5-l-p-4797;
+ic07;icecek;Coca-Cola 1 L;1;L;coca cola 1 l;https://www.sokmarket.com.tr/coca-cola-1-l-p-4687;
+ic08;icecek;Niksar su 5 L;5;L;niksar 5 l;https://www.sokmarket.com.tr/niksar-su-5-l-p-3498;https://www.sokmarket.com.tr/bursa-su-5-l-p-530
+ic09;icecek;Sarıkız maden suyu 6x250 ml;1.5;L;sarikiz maden suyu 6;https://www.sokmarket.com.tr/sarikiz-dogal-maden-suyu-6-250-ml-p-3125;https://www.sokmarket.com.tr/uludag-premium-maden-suyu-6-250-ml-p-2647
+ic10;icecek;Cappy ananaslı meyve suyu 1 L;1;L;cappy ananas 1 l;https://www.sokmarket.com.tr/cappy-ananasli-meyve-suyu-1-l-p-7043;
+te01;temizlik;Ariel toz deterjan 5,5 kg;5.5;kg;ariel 5 5 kg;https://www.sokmarket.com.tr/ariel-oxi-ekstra-hijyen-toz-deterjan-5-5-kg-p-45245;
+te02;temizlik;Persil jel 2470 ml;2.47;L;persil jel 2470;https://www.sokmarket.com.tr/persil-jel-gulun-buyusu-2470-ml-p-282762;
+te03;temizlik;Fairy sıvı bulaşık deterjanı 1000 ml;1;L;fairy 1000 ml;https://www.sokmarket.com.tr/fairy-soguk-suda-etkili-sivi-bulasik-deterjani-1000-ml-p-393;
+te04;temizlik;Pril sıvı bulaşık deterjanı 1405 ml;1.405;L;pril 1405;https://www.sokmarket.com.tr/pril-losyon-aloe-vera-sivi-bulasik-deterjani-1405-ml-p-5288;
+te05;temizlik;Mintax yoğun çamaşır suyu 1 L;1;L;mintax camasir suyu 1 l;https://www.sokmarket.com.tr/mintax-yogun-camasir-suyu-1-l-p-5892;
+te06;temizlik;Familia tuvalet kağıdı 32'li;32;rulo;familia tuvalet kagidi 32;https://www.sokmarket.com.tr/familia-aile-ekonomisi-tuvalet-kagidi-32-li-p-37143;https://www.sokmarket.com.tr/confort-tuvalet-kagidi-32-li-p-2110
+te07;temizlik;Solo kağıt havlu 12'li;12;rulo;solo kagit havlu 12;https://www.sokmarket.com.tr/solo-kagit-havlu-12-li-p-4939;
+ki01;kisisel_bakim;Komili kepeğe karşı şampuan 500 ml;0.5;L;komili sampuan 500;https://www.sokmarket.com.tr/komili-kepege-karsi-etkili-sampuan-500-ml-p-3301;
+ki02;kisisel_bakim;Gliss şampuan 500 ml;0.5;L;gliss sampuan 500;https://www.sokmarket.com.tr/gliss-sampuan-serum-deep-repair-500-ml-p-7511;
+ki03;kisisel_bakim;Colgate maksimum beyazlık diş macunu 75 ml;0.075;L;colgate dis macunu 75;https://www.sokmarket.com.tr/colgate-maksimum-beyazlik-dis-macunu-75-ml-p-8230;
+ki04;kisisel_bakim;Signal White Now diş macunu 75 ml;0.075;L;signal white now 75;https://www.sokmarket.com.tr/signal-white-now-75-ml-dis-macunu-p-46623;
+ki05;kisisel_bakim;Duru Türk Hamamı sabun 4x200 g;0.8;kg;duru sabun 4 200;https://www.sokmarket.com.tr/duru-turk-hamami-klasik-sabun-4-200-g-p-489911;
+ki06;kisisel_bakim;Dove sıvı sabun 500 ml;0.5;L;dove sivi sabun 500;https://www.sokmarket.com.tr/dove-sivi-sabun-500-ml-p-1173;
+ki07;kisisel_bakim;Rexona deodorant 150 ml;0.15;L;rexona deodorant 150;https://www.sokmarket.com.tr/rexona-sexy-bouqet-deodorant-150-ml-p-5473;

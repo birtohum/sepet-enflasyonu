@@ -1,0 +1,5 @@
+.venv/
+.onbellek/
+__pycache__/
+.pytest_cache/
+*.log

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sepet Enflasyonu</title>
+<meta name="description" content="Aynı market ürünlerinin fiyatını her gün kaydeden, TÜİK TÜFE ile yan yana gösteren açık kaynaklı bir izleme.">
+<link rel="stylesheet" href="stil.css">
+</head>
+<body>
+<header class="ust">
+  <div class="kap">
+    <p class="ust-etiket">Açık kaynak fiyat izleme</p>
+    <h1>Sepet Enflasyonu</h1>
+    <p class="giris">Aynı <span id="urun-sayisi">—</span> market ürününün fiyatını her gün kaydediyoruz ve TÜİK'in tüketici fiyat endeksiyle (TÜFE) yan yana koyuyoruz. Yöntem, ham veri ve kod açık.</p>
+    <div id="durum" class="durum" role="status"></div>
+  </div>
+</header>
+
+<main class="kap">
+  <section class="kartlar" id="kartlar" aria-label="Özet"></section>
+
+  <section class="bolum" id="b-sepet">
+    <h2>Sepet endeksi</h2>
+    <p class="aciklama">İlk gün = 100. Her ürün eşit ağırlıklı; günlük değişimlerin geometrik ortalaması zincirlenir.</p>
+    <div class="grafik" id="g-sepet"></div>
+  </section>
+
+  <section class="bolum" id="b-karsilastirma">
+    <h2>TÜİK TÜFE ile aylık karşılaştırma</h2>
+    <div id="karsilastirma"></div>
+  </section>
+
+  <section class="bolum" id="b-hal">
+    <h2>Toptan sebze-meyve: İzmir hali ve TÜFE</h2>
+    <p class="aciklama" id="hal-aciklama"></p>
+    <div class="grafik" id="g-hal"></div>
+    <details class="tablo-ac"><summary>Tablo olarak göster</summary><div id="t-hal"></div></details>
+  </section>
+
+  <section class="bolum" id="b-kategori">
+    <h2>Kategoriler</h2>
+    <p class="aciklama">Kategori endekslerinin ilk günden bugüne değişimi.</p>
+    <div id="kategoriler"></div>
+  </section>
+
+  <section class="bolum" id="b-zam">
+    <h2>En çok fiyatı değişen ürünler</h2>
+    <p class="aciklama">İlk gözlemden son gözleme, ödenen fiyattaki değişim (kampanya indirimleri dahil).</p>
+    <div id="zamlar"></div>
+  </section>
+
+  <section class="bolum" id="b-urunler">
+    <h2>Tüm ürünler</h2>
+    <div class="arac">
+      <label for="ara" class="gizli">Ürün ara</label>
+      <input id="ara" type="search" placeholder="Ürün ara (ör. süt, çay)">
+      <label for="kat-sec" class="gizli">Kategori</label>
+      <select id="kat-sec"><option value="">Tüm kategoriler</option></select>
+    </div>
+    <div id="urun-listesi"></div>
+  </section>
+
+  <section class="bolum yontem" id="yontem">
+    <h2>Yöntem ve sınırlar</h2>
+    <h3>Ne ölçülüyor?</h3>
+    <p>Sabit bir sepet: marka ve gramajı belli <span class="urun-sayisi2">—</span> ürün, TÜİK harcama gruplarına kabaca denk 11 kategoride (gıda, alkolsüz içecek, temizlik, kişisel bakım). Fiyatlar <a href="https://www.sokmarket.com.tr">ŞOK</a>'un çevrimiçi ürün sayfalarından günde bir kez okunur. Ödenen fiyat (kampanya indirimi dahil) kullanılır; liste fiyatı da ham veride saklanır.</p>
+    <h3>Endeks nasıl hesaplanıyor?</h3>
+    <ul>
+      <li><strong>Ürün düzeyi:</strong> Bugünkü fiyat, aynı ürünün son gözlenen fiyatına bölünür (en çok 14 gün geriye bakılır).</li>
+      <li><strong>Toplama:</strong> Eşit ağırlıklı geometrik ortalama (Jevons), günlük zincirleme. TÜİK ağırlıkları <em>uygulanmıyor</em>; bu bir "her ürün bir oy" sepetidir.</li>
+      <li><strong>Eksik gün/ürün:</strong> O gün fiyatı okunamayan ürün hesaba girmez; geri geldiğinde aradaki değişim o gün yansır. Veri olmayan günde endeks bir önceki değeri taşır.</li>
+      <li><strong>İkame:</strong> Ürün satıştan kalkarsa listede önceden belirlenmiş benzer ürüne geçilir. Geçiş günündeki fiyat farkı endekse girmez; yeni ürün kendi fiyat değişimleriyle devam eder.</li>
+      <li><strong>Hatalı veri:</strong> Bir günde 3 kattan fazla artış ya da üçte bire düşüş veri hatası sayılır ve hesaba girmez.</li>
+      <li><strong>Aylık değişim:</strong> Günlük endeksin ay ortalaması bir önceki ayın ortalamasıyla karşılaştırılır. Bir ay en az 15 gün veri yoksa karşılaştırmaya girmez.</li>
+    </ul>
+    <h3>Sınırlar</h3>
+    <ul>
+      <li>Tek zincir market, yalnız çevrimiçi fiyat. Mağaza fiyatı, bölge farkı ve diğer marketler yansımıyor.</li>
+      <li>TÜFE kira, ulaşım, enerji, eğitim, sağlık gibi kalemleri de içerir; bu sepet içermez. Genel TÜFE ile birebir karşılaştırılamaz, yalnız yan yana konur.</li>
+      <li>Geçmiş kısa. Kampanyalar ve mevsim etkisi kısa dönemde gürültü yaratır; birkaç aylık veri birikmeden sonuç çıkarmak yanıltıcı olur.</li>
+      <li>Hal fiyatları toptandır ve yalnız İzmir'e aittir; tezgâh fiyatı değildir. Sebze-meyve mevsimsel olarak çok oynar.</li>
+    </ul>
+    <h3>Kaynaklar</h3>
+    <ul>
+      <li>Perakende fiyat: ŞOK çevrimiçi market ürün sayfaları (robots.txt'e uygun, günde bir istek/ürün).</li>
+      <li>Hal fiyatı: <a href="https://acikveri.bizizmir.com/dataset/sebze-ve-meyve-hal-fiyatlari">İzmir Büyükşehir Belediyesi Açık Veri Portalı</a>. Atıf 4.0 Uluslararası (CC BY 4.0) kapsamında lisanslanan kamu sektörü bilgilerini içerir.</li>
+      <li>TÜFE: TÜİK verisi, <a href="https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Istatistikler/Enflasyon+Verileri/Tuketici+Fiyatlari">TCMB tüketici fiyatları tablosundan</a>.</li>
+    </ul>
+    <p>Ham veri, sepet listesi ve kod: <a href="https://github.com/birtohum/enflasyon">github.com/birtohum/enflasyon</a>. Bu site herhangi bir kurum ya da marketle bağlantılı değildir.</p>
+  </section>
+</main>
+
+<footer class="alt kap">
+  <p>Son güncelleme: <span id="guncelleme">—</span></p>
+</footer>
+
+<div id="ipucu" class="ipucu" role="tooltip" hidden></div>
+<script src="uygulama.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+name: Günlük fiyat toplama
+
+on:
+  schedule:
+    - cron: "15 6 * * *"   # her gün 09:15 (Türkiye saati)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gunluk
+  cancel-in-progress: false
+
+jobs:
+  topla:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Testler
+        run: |
+          pip install -q pytest
+          python -m pytest -q testler
+
+      - name: ŞOK sepet fiyatları
+        working-directory: betikler
+        run: python cek_sok.py
+
+      - name: İzmir hal fiyatları (son 3 gün)
+        working-directory: betikler
+        run: python cek_hal.py
+        continue-on-error: true
+
+      - name: TÜFE (TCMB tablosu)
+        working-directory: betikler
+        run: python cek_tufe.py
+        continue-on-error: true
+
+      - name: Endeks ve site verisi
+        working-directory: betikler
+        run: python hesapla.py
+
+      - name: Depoya yaz
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add veri site/veri
+          if git diff --cached --quiet; then
+            echo "değişiklik yok"
+          else
+            git commit -m "Veri: $(TZ=Europe/Istanbul date +%F)"
+            git push
+          fi
