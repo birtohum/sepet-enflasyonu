@@ -92,3 +92,11 @@ def test_tufe_tablosu():
         {"ay": "2026-08", "yillik_yuzde": 31.51, "aylik_yuzde": 1.84},
         {"ay": "2026-09", "yillik_yuzde": 29.73, "aylik_yuzde": 1.84},
     ]
+
+
+def test_hal_yillik_dogrudan_karsilastirma():
+    from hesapla import hal_yillik
+    mallar = {f"m{i}": 10.0 for i in range(10)}
+    ay_ort = {"2025-03": mallar, "2026-03": {k: v * 1.5 for k, v in mallar.items()},
+              "2026-04": mallar}  # 2025-04 yok: karşılaştırılmaz
+    assert hal_yillik(ay_ort) == [{"ay": "2026-03", "yillik": 50.0, "mal": 10}]

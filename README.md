@@ -49,9 +49,11 @@ Kod: [`betikler/hesapla.py`](betikler/hesapla.py), testler: [`testler/`](testler
 4. **Eksik gün / ürün:** Fiyatı okunamayan ürün o gün hesaba girmez; geri geldiğinde aradaki toplam değişim o gün yansır. Hiç veri olmayan günde endeks önceki değerini taşır.
 5. **Hatalı veri:** Bir günde 3 kattan fazla artış ya da üçte birden fazla düşüş veri hatası sayılır, endekse girmez, seri o fiyattan yeniden başlar. Atılan gözlemler `ozet.json` içinde `atilan` alanında listelenir.
 6. **Aylık değişim:** Günlük endeksin ay ortalaması ÷ önceki ayın ortalaması. Bir ayda 15 günden az veri varsa o ay karşılaştırmaya girmez.
-7. **TÜFE ile aynı taban:** TÜFE'nin aylık değişimleri zincirlenerek karşılaştırılan serinin ilk tam ayı = 100 olacak şekilde yeniden tabanlanır.
+7. **TÜFE karşılaştırması:** Sepetin aylık değişimi TÜİK genel TÜFE'nin aylık değişimiyle aynı satırda gösterilir. (`tufe_endeksi()` TÜFE'yi istenen aya = 100 olacak biçimde yeniden tabanlar; birkaç ay birikince aynı tabanlı seviye grafiği için kullanılacak.)
 
-**İzmir hal endeksi:** Aynı yöntem; kg ile satılan yerli sebze ve meyvelerin (ithal ve adet/bağ ile satılanlar hariç) günlük ortalama toptan fiyatları. Mevsimlik ürünler girip çıkar; 14 günden uzun aradan sonra dönen ürün yeni seri başlatır, böylece mevsim girişi bir "zam" gibi görünmez.
+**İzmir hal serisi — farklı yöntem, nedeniyle:** Kg ile satılan yerli sebze ve meyvelerin (ithal ve adet/bağ ile satılanlar hariç) günlük ortalama toptan fiyatları. Önce sepetle aynı günlük zincirleme yöntemi denedim; 21 aylık veride endeks belirgin biçimde aşağı kaydı (Ocak 2025 = 100 iken Ekim 2026'da ~90). Doğrudan karşılaştırma bunun yanlış olduğunu gösterdi: aynı ürünlerin Ekim 2026 ortalaması Ekim 2025'ten ~%12, Nisan 2026 ortalaması Nisan 2025'ten ~%55 yüksek. Sebebi bilinen bir zincir sapması: mevsimlik ürün sezona pahalı girer, sezon içinde ucuzlar (bu düşüşler endekse girer), sezon sonunda pahalanırken listeden çıkar ya da uzun aradan sonra yeni seri olarak döner (bu artışlar girmez). Bu yüzden hal için **doğrudan yıllık karşılaştırma** kullanılıyor: her ay, bir yıl önceki aynı ayla, iki ayda da en az 5 bülten günü bulunan aynı ürünlerle; fiyat oranlarının geometrik ortalaması. Zincirleme yok, mevsim aynı ayla eşleştiği için büyük ölçüde nötrlenir. Seri Ocak 2026'dan başlar (2025 başından beri veri var).
+
+ŞOK sepeti bu sapmadan büyük ölçüde etkilenmez: ürünler sabittir ve girip çıkmaz; sabit bir küme için zincirlenmiş Jevons, ilk gün ile bugünün doğrudan karşılaştırmasına eşittir. Sapma yalnız sık sık kaybolan ürünlerde ortaya çıkabilir; ürün kapsaması `ozet.json` içinde günlük tutulur ve izlenmeli.
 
 ## Sınırlar
 

@@ -156,22 +156,23 @@ function karsilastirmaYaz(o) {
 
 function halYaz(o) {
   const h = o.hal;
-  if (!h || !h.aylar) { $("b-hal").hidden = true; return; }
-  const aylar = h.aylar.filter(a => a.gun >= 15);
-  $("hal-aciklama").innerHTML = `İzmir Büyükşehir Belediyesi sebze-meyve halinin günlük ortalama toptan fiyatları, ${h.mal_sayisi} yerli ürün (kg ile satılanlar).
-    Aynı yöntemle zincirlenmiş endeksin ay ortalaması; ${ayYaz(h.taban_ay)} = 100. TÜFE aynı aya tabanlandı.
-    Sebze-meyve mevsimsel olarak çok oynar; tek ayın farkı bir şey söylemez, yıllık değişime bakmak daha anlamlı.`;
+  if (!h || !h.aylar || !h.aylar.length) { $("b-hal").hidden = true; return; }
+  const aylar = h.aylar;
+  $("hal-aciklama").innerHTML = `İzmir Büyükşehir Belediyesi sebze-meyve halinin günlük ortalama toptan fiyatları (kg ile satılan yerli ürünler,
+    ${gunYaz(h.ilk_gun)}'ten beri ${h.gun_sayisi} bülten günü). Her ay, bir yıl önceki aynı ayla ve iki ayda da satılan aynı ürünlerle karşılaştırılır.
+    Toptan fiyattır, yalnız İzmir'e aittir; TÜFE ise tüm harcamaları kapsar. İki çizgi aynı şeyi ölçmez, yan yana durur.`;
   cizgiGrafik($("g-hal"), {
-    etiketler: aylar.map(a => a.ay), taban: 100,
+    etiketler: aylar.map(a => a.ay), taban: 0,
     seriler: [
-      { ad: "İzmir hali, sebze-meyve (toptan)", renk: "--seri-1", veri: aylar.map(a => a.hal) },
-      { ad: "TÜİK TÜFE (genel)", renk: "--seri-2", veri: aylar.map(a => a.tufe) },
+      { ad: "İzmir hali, sebze-meyve (toptan), yıllık", renk: "--seri-1", veri: aylar.map(a => a.yillik) },
+      { ad: "TÜİK TÜFE (genel), yıllık", renk: "--seri-2", veri: aylar.map(a => a.tufe_yillik) },
     ],
     xYaz: (a, uzun) => uzun ? ayYaz(a) : ayKisa(a),
+    yYaz: y => y == null ? "açıklanmadı" : yuzde(y),
   });
-  const t = el("table", {}, el("thead", { html: '<tr><th>Ay</th><th class="s">Hal endeksi</th><th class="s">TÜFE endeksi</th><th class="s">Hal, yıllık</th><th class="s">TÜFE, yıllık</th></tr>' }),
+  const t = el("table", {}, el("thead", { html: '<tr><th>Ay</th><th class="s">Hal, yıllık</th><th class="s">TÜFE, yıllık</th><th class="s gizle-dar">Karşılaştırılan ürün</th></tr>' }),
     el("tbody", {}, ...aylar.slice().reverse().map(a => el("tr", { html:
-      `<td>${ayYaz(a.ay)}</td><td class="s">${sayi(a.hal, 1)}</td><td class="s">${a.tufe == null ? "—" : sayi(a.tufe, 1)}</td><td class="s">${yuzde(a.hal_yillik)}</td><td class="s">${a.tufe_yillik == null ? "—" : yuzde(a.tufe_yillik)}</td>` }))));
+      `<td>${ayYaz(a.ay)}</td><td class="s">${yuzde(a.yillik)}</td><td class="s">${a.tufe_yillik == null ? "açıklanmadı" : yuzde(a.tufe_yillik)}</td><td class="s gizle-dar">${a.mal}</td>` }))));
   $("t-hal").replaceChildren(el("div", { class: "tablo-kap" }, t));
 }
 

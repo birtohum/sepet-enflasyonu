@@ -202,8 +202,30 @@ def sepet_hesapla(tufe: list[dict]) -> tuple[dict, list[dict]]:
 
 # ---------------------------------------------------------------- İzmir hali
 
+HAL_ESIK_GUN = 5  # bir malın ay ortalaması için gereken en az bülten günü
+
+
+def hal_yillik(ay_ort: dict[str, dict[str, float]]) -> list[dict]:
+    """Doğrudan yıllık karşılaştırma: aynı ay, iki yılda da bulunan aynı mallar,
+    fiyat oranlarının geometrik ortalaması. Zincirleme yapılmaz; mevsimlik malların
+    girip çıkması kayma (zincir sapması) üretmez."""
+    sonuc = []
+    for ay in sorted(ay_ort):
+        y, m = int(ay[:4]), int(ay[5:])
+        once = ay_ort.get(f"{y - 1}-{m:02d}")
+        if not once:
+            continue
+        ortak = set(once) & set(ay_ort[ay])
+        if len(ortak) < 10:
+            continue
+        log_ort = sum(math.log(ay_ort[ay][k] / once[k]) for k in ortak) / len(ortak)
+        sonuc.append({"ay": ay, "yillik": round((math.exp(log_ort) - 1) * 100, 1), "mal": len(ortak)})
+    return sonuc
+
+
 def hal_hesapla(tufe: list[dict]) -> dict:
-    gozlem: dict[str, dict[str, tuple[float, str]]] = defaultdict(dict)
+    fiyatlar: dict[str, dict[str, list[float]]] = defaultdict(lambda: defaultdict(list))
+    gunler: dict[str, set] = defaultdict(set)
     adlar = {}
     for f in sorted((VERI / "ham" / "hal_izmir").glob("*.csv")):
         with open(f, encoding="utf-8", newline="") as fh:
@@ -215,38 +237,27 @@ def hal_hesapla(tufe: list[dict]) -> dict:
                     fiyat = float(r["ortalama"])
                 except ValueError:
                     continue
-                gozlem[r["tarih"]][r["mal_id"]] = (fiyat, "hal")
+                if fiyat <= 0:
+                    continue
+                fiyatlar[r["tarih"][:7]][r["mal_id"]].append(fiyat)
+                gunler[r["tarih"][:7]].add(r["tarih"])
                 adlar[r["mal_id"]] = r["mal_adi"]
-    if not gozlem:
+    if not fiyatlar:
         return {}
-    sonuc = zincir_endeks(gozlem)
-    aylik = aylik_ortalama(sonuc["gunler"], sonuc["genel"])
-    tam = [a for a in aylik if a["gun"] >= TAM_AY_GUN]
-    taban = tam[0]["ay"] if tam else aylik[0]["ay"]
-    taban_ort = next(a["ort"] for a in aylik if a["ay"] == taban)
-    tufe_e = tufe_endeksi(tufe, taban)
+    ay_ort = {ay: {k: sum(v) / len(v) for k, v in mallar.items() if len(v) >= HAL_ESIK_GUN}
+              for ay, mallar in fiyatlar.items()}
+    # eksik ay (ör. ayın ilk günleri) karşılaştırmaya girmez
+    ay_ort = {ay: d for ay, d in ay_ort.items() if len(gunler[ay]) >= TAM_AY_GUN}
     t = {r["ay"]: r for r in tufe}
-    aylar = []
-    ort = {a["ay"]: a["ort"] for a in aylik}
-    for a in aylik:
-        y, m = int(a["ay"][:4]), int(a["ay"][5:])
-        gecen_yil = f"{y - 1}-{m:02d}"
-        yillik = round((a["ort"] / ort[gecen_yil] - 1) * 100, 1) if gecen_yil in ort else None
-        aylar.append({
-            "ay": a["ay"], "gun": a["gun"],
-            "hal": round(a["ort"] / taban_ort * 100, 2),
-            "tufe": tufe_e.get(a["ay"]),
-            "hal_yillik": yillik,
-            "tufe_yillik": t.get(a["ay"], {}).get("yillik"),
-        })
+    aylar = [{**s, "gun": len(gunler[s["ay"]]), "tufe_yillik": t.get(s["ay"], {}).get("yillik")}
+             for s in hal_yillik(ay_ort)]
+    tum_gunler = sorted(set().union(*gunler.values()))
     return {
-        "taban_ay": taban,
         "aylar": aylar,
         "mal_sayisi": len(adlar),
-        "ilk_gun": sonuc["gunler"][0],
-        "son_gun": sonuc["gunler"][-1],
-        "gun_sayisi": len(sonuc["gunler"]),
-        "karsilastirma": karsilastirma(aylik, tufe),
+        "ilk_gun": tum_gunler[0],
+        "son_gun": tum_gunler[-1],
+        "gun_sayisi": len(tum_gunler),
     }
 
 
