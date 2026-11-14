@@ -1,0 +1,84 @@
+tarih,kod,durum,kullanilan,url,sitedeki_ad,fiyat,liste_fiyati,stok,magaza,saat
+2026-11-14,ek01,tamam,asil,https://www.sokmarket.com.tr/piyale-un-5-kg-p-8539,Piyale Un 5 kg,149.0,149.0,1,13412,10:21
+2026-11-14,ek02,tamam,asil,https://www.sokmarket.com.tr/anadolu-mutfagi-osmancik-pirinc-1-kg-p-8374,Anadolu Mutfağı Osmancık Pirinç 1 kg,78.0,78.0,1,13412,10:22
+2026-11-14,ek03,tamam,asil,https://www.sokmarket.com.tr/anadolu-mutfagi-baldo-pirinc-1-kg-p-8088,Anadolu Mutfağı Baldo Pirinç 1 kg,87.0,87.0,1,13412,10:22
+2026-11-14,ek04,tamam,asil,https://www.sokmarket.com.tr/anadolu-mutfagi-pilavlik-bulgur-1-kg-p-5325,Anadolu Mutfağı Pilavlık Bulgur 1 kg,38.0,38.0,1,13412,10:22
+2026-11-14,ek05,tamam,asil,https://www.sokmarket.com.tr/anadolu-mutfagi-koftelik-bulgur-1-kg-p-7644,Anadolu Mutfağı Köftelik Bulgur 1 kg,38.0,38.0,1,13412,10:22
+2026-11-14,ek06,tamam,asil,https://www.sokmarket.com.tr/filiz-makarna-fiyonk-500-g-p-4719,Filiz Makarna Fiyonk 500 g,36.5,36.5,1,13412,10:22
+2026-11-14,ek07,tamam,asil,https://www.sokmarket.com.tr/piyale-kelebek-makarna-500-g-p-5915,Piyale Kelebek Makarna 500 g,19.75,19.75,1,13412,10:22
+2026-11-14,ek08,tamam,asil,https://www.sokmarket.com.tr/eti-lifalif-yulaf-ezmesi-avantaj-paketi-950-g-p-3574,Eti Lifalif Yulaf Ezmesi Avantaj Paketi 950 g,185.0,185.0,0,13412,10:22
+2026-11-14,ek09,tamam,asil,https://www.sokmarket.com.tr/ulker-kakaolu-potibor-biskuvi-450-g-p-5014,Ülker Kakaolu Pötibör Bisküvi 450 g,69.95,69.95,1,13412,10:22
+2026-11-14,ek10,tamam,asil,https://www.sokmarket.com.tr/eyvallah-yufka-ekmek-500-g-p-6453,Eyvallah Yufka Ekmek 500 g,85.0,109.0,0,13412,10:22
+2026-11-14,et01,tamam,asil,https://www.sokmarket.com.tr/lezzetlim-dana-kiyma-400-g-p-5443,Lezzetlim Dana Kıyma 400 g,330.0,330.0,1,13412,10:22
+2026-11-14,et02,tamam,asil,https://www.sokmarket.com.tr/lezzetlim-dana-kusbasi-400-g-p-5400,Lezzetlim Dana Kuşbaşı 400 g,399.0,399.0,0,13412,10:22
+2026-11-14,et03,tamam,asil,https://www.sokmarket.com.tr/senpilic-kanat-kg-p-5455,Şenpiliç Kanat kg,299.0,299.0,0,13412,10:22
+2026-11-14,et04,tamam,asil,https://www.sokmarket.com.tr/gedik-pilic-baton-sucuk-450-g-p-7675,Gedik Piliç Baton Sucuk 450 g,135.0,135.0,0,13412,10:22
+2026-11-14,et05,tamam,asil,https://www.sokmarket.com.tr/aytac-dana-kasap-sucuk-400-g-p-34674,Aytaç Dana Kasap Sucuk 400 g,379.0,379.0,1,13412,10:22
+2026-11-14,su01,tamam,asil,https://www.sokmarket.com.tr/sutas-yarim-yagli-sut-4-1-lt-p-32260,Sütaş Yarım Yağlı Süt 4*1 Lt,189.0,189.0,0,13412,10:22
+2026-11-14,su02,tamam,asil,https://www.sokmarket.com.tr/pinar-sut-1-yagli-1-l-p-3670,Pınar Süt %1 Yağlı 1 L,59.9,59.9,1,13412,10:22
+2026-11-14,su03,tamam,asil,https://www.sokmarket.com.tr/sutas-kaymaksiz-yogurt-1-kg-p-7490,Sütaş Kaymaksız Yoğurt 1 Kg,99.5,99.5,0,13412,10:22
+2026-11-14,su04,tamam,asil,https://www.sokmarket.com.tr/mis-yogurt-tam-yagli-homojenize-3000-g-p-8765,Mis Yoğurt Tam Yağlı Homojenize 3000 g,199.0,199.0,1,13412,10:22
+2026-11-14,su05,tamam,asil,https://www.sokmarket.com.tr/mis-tam-yagli-beyaz-peynir-1000-g-p-8122,Mis Tam Yağlı Beyaz Peynir 1000 g,279.0,279.0,1,13412,10:22
+2026-11-14,su06,tamam,asil,https://www.sokmarket.com.tr/sutas-tam-yagli-beyaz-peynir-500-g-p-8473,Sütaş Tam Yağlı Beyaz Peynir 500 g,142.0,142.0,0,13412,10:22
+2026-11-14,su07,tamam,asil,https://www.sokmarket.com.tr/mis-tam-yagli-kasar-peyniri-500-g-p-8768,Mis Tam Yağlı Kaşar Peyniri 500 g,239.0,239.0,1,13412,10:23
+2026-11-14,su08,tamam,asil,https://www.sokmarket.com.tr/icim-kasar-peyniri-700-g-p-5463,İçim Kaşar Peyniri 700 g,415.0,415.0,1,13412,10:23
+2026-11-14,su09,tamam,asil,https://www.sokmarket.com.tr/anadolu-ciftligi-m-yumurta-30-lu-53-63-g-p-4948,Anadolu Çiftliği M Yumurta 30'lu (53-63 g),179.0,179.0,1,13412,10:23
+2026-11-14,su10,tamam,asil,https://www.sokmarket.com.tr/anadolu-ciftligi-l-yumurta-15-li-63-72-g-p-4821,Anadolu Çiftliği L Yumurta 15'li (63-72 g),99.0,99.0,1,13412,10:23
+2026-11-14,su11,tamam,asil,https://www.sokmarket.com.tr/mis-tereyagi-500-g-p-7204,Mis Tereyağı 500 g,239.0,239.0,1,13412,10:23
+2026-11-14,su12,tamam,asil,https://www.sokmarket.com.tr/sutas-pratik-sise-ayran-1-lt-p-8005,Sütaş Pratik Şişe Ayran 1 lt,59.5,59.5,0,13412,10:23
+2026-11-14,ya01,tamam,asil,https://www.sokmarket.com.tr/evin-aycicek-yagi-pet-5-l-p-6486,Evin Ayçiçek Yağı Pet 5 L,479.0,479.0,1,13412,10:23
+2026-11-14,ya02,tamam,asil,https://www.sokmarket.com.tr/evin-aycicek-yagi-2-l-p-7411,Evin Ayçiçek Yağı 2 L,219.0,219.0,1,13412,10:23
+2026-11-14,ya03,tamam,asil,https://www.sokmarket.com.tr/lio-sizma-zeytinyagi-1-l-p-5180,Lio Sızma Zeytinyağı 1 L,310.0,310.0,1,13412,10:23
+2026-11-14,ya04,tamam,asil,https://www.sokmarket.com.tr/lio-sizma-zeytinyagi-2-l-p-8749,Lio Sızma Zeytinyağı 2 L,595.0,595.0,0,13412,10:23
+2026-11-14,ya05,tamam,asil,https://www.sokmarket.com.tr/sana-paket-margarin-4-250-g-p-32293,Sana Paket Margarin 4*250 g,75.0,75.0,0,13412,10:23
+2026-11-14,ya06,tamam,asil,https://www.sokmarket.com.tr/bizim-paket-margarin-250-g-p-4867,Bizim Paket Margarin 250 g,44.9,59.0,1,13412,10:23
+2026-11-14,me01,tamam,asil,https://www.sokmarket.com.tr/yerli-muz-kg-p-33027,Yerli Muz Kg,109.0,109.0,1,13412,10:23
+2026-11-14,me02,tamam,asil,https://www.sokmarket.com.tr/elma-starking-kg-p-37013,Elma Starking Kg,69.9,69.9,1,13412,10:23
+2026-11-14,me03,tamam,asil,https://www.sokmarket.com.tr/limon-kg-p-32770,Limon Kg,34.9,34.9,1,13412,10:23
+2026-11-14,se01,tamam,asil,https://www.sokmarket.com.tr/domates-kg-p-32886,Domates Kg,79.9,79.9,1,13412,10:23
+2026-11-14,se02,tamam,asil,https://www.sokmarket.com.tr/patates-kg-p-35919,Patates Kg,35.0,35.0,1,13412,10:23
+2026-11-14,se03,tamam,asil,https://www.sokmarket.com.tr/kuru-sogan-kg-p-32883,Kuru Soğan Kg,24.9,35.0,1,13412,10:23
+2026-11-14,se04,tamam,asil,https://www.sokmarket.com.tr/salatalik-kg-p-34550,Salatalık Kg,69.9,69.9,1,13412,10:23
+2026-11-14,se05,tamam,asil,https://www.sokmarket.com.tr/mantar-300-g-paket-p-37256,Mantar 300 g Paket,69.9,69.9,1,13412,10:23
+2026-11-14,se06,tamam,asil,https://www.sokmarket.com.tr/anadolu-mutfagi-kirmizi-mercimek-1000-g-p-9055,Anadolu Mutfağı Kırmızı Mercimek 1000 g,49.5,49.5,1,13412,10:24
+2026-11-14,se07,tamam,asil,https://www.sokmarket.com.tr/anadolu-mutfagi-nohut-1-kg-p-9054,Anadolu Mutfağı Nohut 1 kg,62.5,62.5,1,13412,10:24
+2026-11-14,se08,tamam,asil,https://www.sokmarket.com.tr/anadolu-mutfagi-kuru-fasulye-1-kg-p-6035,Anadolu Mutfağı Kuru Fasulye 1 kg,89.0,89.0,1,13412,10:24
+2026-11-14,se09,tamam,asil,https://www.sokmarket.com.tr/domates-salcasi-bizim-vatan-830-g-p-6049,Domates Salçası Bizim Vatan 830 g,67.5,67.5,1,13412,10:24
+2026-11-14,se10,tamam,asil,https://www.sokmarket.com.tr/salatalik-tursusu-bizim-vatan-670-g-p-8391,Salatalık Turşusu Bizim Vatan 670 g,67.5,67.5,1,13412,10:24
+2026-11-14,sk01,tamam,asil,https://www.sokmarket.com.tr/turk-seker-kristal-toz-seker-5-kg-p-2716,Türk Şeker Krıstal Toz Şeker 5 Kg,249.0,249.0,0,13412,10:24
+2026-11-14,sk02,tamam,asil,https://www.sokmarket.com.tr/altinkup-kup-seker-1000-g-p-5794,Altınküp Küp Şeker 1000 g,70.0,70.0,1,13412,10:24
+2026-11-14,sk03,tamam,asil,https://www.sokmarket.com.tr/tamek-visne-receli-380-g-p-9073,Tamek Vişne Reçeli 380 g,59.0,59.0,0,13412,10:24
+2026-11-14,sk04,tamam,asil,https://www.sokmarket.com.tr/nutella-400-g-p-4790,Nutella 400 g,86.95,86.95,0,13412,10:24
+2026-11-14,sk05,tamam,asil,https://www.sokmarket.com.tr/milka-sutlu-cikolata-80-g-p-4652,Milka Sütlü Çikolata 80 g,159.0,159.0,0,13412,10:24
+2026-11-14,sk06,tamam,asil,https://www.sokmarket.com.tr/ulker-cikolatali-gofret-4-lu-144-g-p-2359,Ülker Çikolatalı Gofret 4'lü 144 g,69.0,69.0,1,13412,10:24
+2026-11-14,sk07,tamam,asil,https://www.sokmarket.com.tr/eti-burcak-biskuvi-sutlu-cikolali-114-g-p-6090,Eti Burçak Bisküvi Sütlü Çikolalı 114 g,39.95,39.95,1,13412,10:24
+2026-11-14,dg01,tamam,asil,https://www.sokmarket.com.tr/tat-ketcap-390-g-p-4960,Tat Ketçap 390 g,115.0,115.0,1,13412,10:24
+2026-11-14,dg02,tamam,asil,https://www.sokmarket.com.tr/mayi-tuz-iyotlu-ince-sofra-tuzu-600-gr-p-45224,Mayi Tuz İyotlu İnce Sofra Tuzu 600 Gr,21.9,21.9,0,13412,10:24
+2026-11-14,dg03,tamam,asil,https://www.sokmarket.com.tr/lio-salamura-siyah-zeytin-351-410-400-g-p-1755,Lio Salamura Siyah Zeytin (351-410) 400 g,59.0,59.0,0,13412,10:24
+2026-11-14,dg04,tamam,asil,https://www.sokmarket.com.tr/lio-cizik-yesil-zeytin-291-320-400-g-p-5882,Lio Çizik Yeşil Zeytin (291-320) 400 g,92.5,92.5,1,13412,10:24
+2026-11-14,dg05,tamam,asil,https://www.sokmarket.com.tr/elma-sirkesi-bizim-vatan-750-ml-p-6038,Elma Sirkesi Bizim Vatan 750 ml,31.0,31.0,1,13412,10:24
+2026-11-14,dg06,tamam,asil,https://www.sokmarket.com.tr/knorr-sehriyeli-tavuk-corbasi-51-g-p-4970,Knorr Şehriyeli Tavuk Çorbası 51 g,49.5,49.5,1,13412,10:24
+2026-11-14,ic01,tamam,asil,https://www.sokmarket.com.tr/caykur-rize-turist-cay-1000-g-p-7545,Çaykur Rize Turist Çay 1000 g,429.0,429.0,1,13412,10:24
+2026-11-14,ic02,tamam,asil,https://www.sokmarket.com.tr/caykur-tiryaki-cay-500-g-p-8191,Çaykur Tiryaki Çay 500 g,139.0,139.0,0,13412,10:24
+2026-11-14,ic03,tamam,asil,https://www.sokmarket.com.tr/lipton-yellow-label-cay-500-g-p-48654,Lipton Yellow Label Çay 500 g,159.0,159.0,0,13412,10:25
+2026-11-14,ic04,tamam,asil,https://www.sokmarket.com.tr/kurukahveci-mehmet-efendi-turk-kahvesi-100-g-p-4743,Kurukahveci Mehmet Efendi Türk Kahvesi 100 g,110.0,110.0,1,13412,10:25
+2026-11-14,ic05,tamam,asil,https://www.sokmarket.com.tr/nescafe-gold-100-g-p-100686,Nescafe Gold 100 g,200.0,200.0,0,13412,10:25
+2026-11-14,ic06,tamam,asil,https://www.sokmarket.com.tr/coca-cola-2-5-l-p-4797,Coca-Cola 2.5 L,100.0,100.0,1,13412,10:25
+2026-11-14,ic07,tamam,asil,https://www.sokmarket.com.tr/coca-cola-1-l-p-4687,Coca-Cola 1 L,70.0,70.0,1,13412,10:25
+2026-11-14,ic08,tamam,asil,https://www.sokmarket.com.tr/niksar-su-5-l-p-3498,Niksar Su 5 L,36.0,36.0,0,13412,10:25
+2026-11-14,ic09,tamam,asil,https://www.sokmarket.com.tr/sarikiz-dogal-maden-suyu-6-250-ml-p-3125,Sarıkız Doğal Maden Suyu 6*250 ml,66.0,66.0,0,13412,10:25
+2026-11-14,ic10,tamam,asil,https://www.sokmarket.com.tr/cappy-ananasli-meyve-suyu-1-l-p-7043,Cappy Ananaslı Meyve Suyu 1 L,80.0,80.0,1,13412,10:25
+2026-11-14,te01,tamam,asil,https://www.sokmarket.com.tr/ariel-oxi-ekstra-hijyen-toz-deterjan-5-5-kg-p-45245,Ariel Oxi Ekstra Hijyen Toz Deterjan 5.5 Kg,373.9,373.9,0,13412,10:25
+2026-11-14,te02,tamam,asil,https://www.sokmarket.com.tr/persil-jel-gulun-buyusu-2470-ml-p-282762,Persil Jel Gülün Büyüsü 2470 Ml,254.0,254.0,0,13412,10:25
+2026-11-14,te03,tamam,asil,https://www.sokmarket.com.tr/fairy-soguk-suda-etkili-sivi-bulasik-deterjani-1000-ml-p-393,Fairy Soğuk Suda Etkili Sıvı Bulaşık Deterjanı 1000 Ml,90.75,90.75,0,13412,10:25
+2026-11-14,te04,tamam,asil,https://www.sokmarket.com.tr/pril-losyon-aloe-vera-sivi-bulasik-deterjani-1405-ml-p-5288,Pril Losyon Aloe Vera Sıvı Bulaşık Deterjanı 1405 Ml,219.0,219.0,0,13412,10:25
+2026-11-14,te05,tamam,asil,https://www.sokmarket.com.tr/mintax-yogun-camasir-suyu-1-l-p-5892,Mintax Yoğun Çamaşır Suyu 1 L,55.0,55.0,1,13412,10:25
+2026-11-14,te06,tamam,asil,https://www.sokmarket.com.tr/familia-aile-ekonomisi-tuvalet-kagidi-32-li-p-37143,Familia Aile Ekonomisi Tuvalet Kağıdı 32'li,150.0,150.0,0,13412,10:25
+2026-11-14,te07,tamam,asil,https://www.sokmarket.com.tr/solo-kagit-havlu-12-li-p-4939,Solo Kağıt Havlu 12'li,199.0,199.0,0,13412,10:25
+2026-11-14,ki01,tamam,asil,https://www.sokmarket.com.tr/komili-kepege-karsi-etkili-sampuan-500-ml-p-3301,Komili Kepeğe Karşı Etkili Şampuan 500 Ml,22.0,22.0,0,13412,10:25
+2026-11-14,ki02,tamam,asil,https://www.sokmarket.com.tr/gliss-sampuan-serum-deep-repair-500-ml-p-7511,Gliss Şampuan Serum Deep Repair 500 ml,121.95,121.95,0,13412,10:25
+2026-11-14,ki03,tamam,asil,https://www.sokmarket.com.tr/colgate-maksimum-beyazlik-dis-macunu-75-ml-p-8230,Colgate Maksimum Beyazlık Diş Macunu 75 ml,162.0,162.0,1,13412,10:25
+2026-11-14,ki04,tamam,asil,https://www.sokmarket.com.tr/signal-white-now-75-ml-dis-macunu-p-46623,Signal White Now 75 Ml Diş Macunu,50.79,50.79,0,13412,10:25
+2026-11-14,ki05,tamam,asil,https://www.sokmarket.com.tr/duru-turk-hamami-klasik-sabun-4-200-g-p-489911,Duru Türk Hamamı Klasik Sabun 4*200 G,169.0,169.0,1,13412,10:25
+2026-11-14,ki06,tamam,asil,https://www.sokmarket.com.tr/dove-sivi-sabun-500-ml-p-1173,Dove Sıvı Sabun 500 Ml,30.0,30.0,0,13412,10:26
+2026-11-14,ki07,tamam,asil,https://www.sokmarket.com.tr/rexona-sexy-bouqet-deodorant-150-ml-p-5473,Rexona Sexy Bouqet Deodorant 150 ml,289.0,289.0,1,13412,10:26
